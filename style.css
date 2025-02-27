@@ -1,0 +1,132 @@
+@font-face {
+    font-family: canopee;
+    src: url(./canopee.ttf);
+}
+@font-face {
+    font-family: domain;
+    src: url(./domain.ttf);
+}
+
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-color: #CCA9B6;
+}
+
+#page1{
+    position: relative;
+    height: 110vh;
+    width: 100vw;
+    background-color: #CCA9B6;
+}
+#page1>canvas{
+    max-height: 100vh;
+    min-width: 100vw;
+
+}
+
+
+#page2{
+    position: relative;
+    height: 140vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, rgb(204,169,182) 27%,rgb(204,136,187) 63%,rgb(219,122,183) 100%);
+    
+}
+
+#page2 h1{
+    font-size: 29VW;
+    letter-spacing: 15px;
+    font-family: fantasy;
+    font-weight: 700;
+    background-color: rgb(219,122,183) 100%;
+    color: #C9D2D5;
+    line-height: 40vh;
+    width: 96%;
+    margin-left: 0.5%;
+    margin-top: 8%;
+    
+}
+#page2 h2{
+    font-size: 27vw;
+    letter-spacing: 15px;
+    font-family: fantasy;
+    font-weight: 700;
+    background-color: rgb(219,122,183) 100%;
+    color: #C9D2D5;
+    line-height: 40vh;
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 15%;
+}
+
+#page3 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient( #ce8db6, #9a6bc7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#page3 h1 {
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-family: 'Fantasy', sans-serif;
+    font-weight: 700;
+    color: #f8f8f8;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 25px;
+    font-family: domain;
+    letter-spacing: 4px;
+}
+
+#page3 h2 {
+    font-size: 60px;
+    font-weight: 600;
+    color: #e0e0e0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    font-family: canopee;
+    letter-spacing: 5px;
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.452);
+    transform: scale(1.08);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
